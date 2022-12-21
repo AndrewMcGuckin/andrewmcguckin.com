@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personal Portfolio Website">
+    <meta name="author" content="Andrew McGuckin">
+    <title>Andrew McGuckin</title>
+    
+    <link href="../public-dev/css/main.css" rel="stylesheet">
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      
+      <!-- Page Icons-->
+      <symbol id="moon" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+      </symbol>
+
+      <symbol id="letter-plus" viewBox="0 0 16 16">
+          <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
+          <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 0 0 1 0v-1h1a.5.5 0 0 0 0-1h-1v-1a.5.5 0 0 0-.5-.5Z"/>
+      </symbol>
+    </svg>
+
+  </head>
+
+
+  <body>
+    <header>
+      <nav class="">
+        <div class="mx-auto py-4">
+          <div class="relative flex h-16 items-center justify-between">
+            
+            <div class="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
+              <div>
+                <a href="index.html" class="flex flex-shrink-0 items-center">
+                  <img src="../resources/images/logo-large.png" class="w-16 h-16">
+                  <h1 class="text-3xl font-bold">Andrew McGuckin</h1>
+                </a>
+              </div>
+              
+              <div class="hidden md:ml-6 md:block">
+                <div class="absolute inset-y-3 right-5 items-center pr-9 flex space-x-4">
+                  
+                  <a href="index.html" class="" aria-current="page">Home</a>
+
+                  <p class="text-primary py-2 font-medium">|</p>
+      
+                  <a href="contact.html" class="">Contact</a>
+
+                  <svg class="w-5 h-5 fill-black-900"><use xlink:href="#moon"/></svg>
+
+                  <label for="theme-toggle" class="inline-flex relative items-center cursor-pointer">
+                    <input type="checkbox" value="" id="theme-toggle" class="sr-only peer">
+                    <div class="w-7 h-4 bg-black-900 rounded-full peer after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:after:translate-x-full peer-checked:bg-black-900 peer-checked:after:border-white" id="theme-switch"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="">
+
+        <div class="px-4 py-16 m-8 text-xl bg-black-900">
+          <h1 class="text-white">Main Hero</h1>
+        </div>
+
+        <div class="flex flex-row flex-wrap">
+            <div class="">
+                <h1>Online Presence</h1>
+            </div>
+        </div>
+
+        <footer class="py-9 mt-48">
+          <div class="right-0 font-semibold text-center">&copy; 2022 Andrew McGuckin</div>
+        </footer>
+
+    </main>
+  </body>
+</html>
