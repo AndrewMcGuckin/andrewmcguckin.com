@@ -40,11 +40,28 @@
                 <div class="mx-auto py-4">
                   <div class="relative flex h-16 items-center justify-between">
                     
+                    <!-- Mobile menu-->
+                    <div class="absolute inset-y-0 right-5 flex items-center md:hidden">
+                        <button type="button" class="inline-flex items-center justify-center rounded-md p-2 text-black-900 hover:text-white hover:bg-teal-700 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" onclick=toggleMobileNav() aria-label="Toggle navigation">
+                        <span class="sr-only">Open main menu</span>
+        
+                        <svg id="open-nav" class="block h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                        
+                        <svg id="close-nav" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                        </button>
+                    </div>
+              
+  
+                    <!-- Main menu-->
                     <div class="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
                       <div>
                         <a href="index.html" class="flex flex-shrink-0 items-center space-x-4">
                           <img src="../resources/images/logo-large.png" class="w-16 h-16 sm:ml-5">
-                          <h1 class="text-3xl font-bold">Andrew McGuckin</h1>
+                          <h1 class="text-3xl font-bold hidden sm:block">Andrew McGuckin</h1>
                         </a>
                       </div>
                       
@@ -67,6 +84,26 @@
                       </div>
                     </div>
                 </div>
+
+                <!-- Mobile menu, show/hide based on menu state. -->
+                <div class="hidden transition ease-in-out" id="mobile-nav">
+                    <div class="space-y-1 px-2 pt-2 pb-3 text-center text-lg font-semibold">
+                      <a href="index.html" class="btn-nav block" aria-current="page">Home</a>
+          
+                      <a href="contact.html" class="btn-nav block">Contact</a>
+          
+                      <div class="flex justify-center py-2 px-3 space-x-3">
+                        <svg class="w-5 h-5 text-black-900 fill-current mr-1"><use xlink:href="#moon"/></svg>
+          
+                        <label for="mobile-toggle" class="inline-flex relative items-center cursor-pointer">
+                          <input type="checkbox" value="" id="mobile-toggle" class="sr-only peer">
+                              <div class="w-7 h-4 bg-black-900 rounded-full peer after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:after:translate-x-full peer-checked:bg-black-900 peer-checked:after:border-white" id="theme-switch"></div>
+                        </label>
+          
+                      </div>
+                    </div>
+          
+                  </div>
               </nav>
         </header>
         
@@ -88,5 +125,6 @@
                 <div class="right-0 font-semibold text-center">&copy; 2022 Andrew McGuckin</div>
             </footer>
         </main>
+        <script type="text/javascript" src="../public-dev/js/functions.js"></script>
     </body>
 </html>
