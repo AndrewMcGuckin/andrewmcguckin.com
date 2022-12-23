@@ -109,7 +109,7 @@
         
         <main class="h-max">
 
-            <div class="text-5xl text-center">
+            <div class="text-5xl text-center font-bold m-16">
                 <h1>Contact</h1>
             </div>
 
@@ -117,33 +117,33 @@
 
                 <div class="basis-1/2">
                     <div class="flex min-h-max min-w-max items-center justify-start">
-                        <div class="w-full p-9">
+                        <div class="w-full ml-20 p-20 bg-cyan-700 text-gray-100 rounded-3xl">
 
                           <h1 class="text-4xl font-medium mb-8">Get in Touch</h1>
                       
-                            <div class="grid gap-6 sm:grid-cols-2">
-                              <div>
-                                <label>First Name</label>
-                                <input type="text" name="fname" class="border-2 border-black-900" placeholder=" " />
-                              </div>
-                              <div>
-                                <label>Surname</label>
-                                <input type="text" name="sname" class="border-2 border-black-900" placeholder=" " />
-                              </div>
-                              <div>
-                                <label>Email</label>
-                                <input type="email" name="email" class="border-2 border-black-900" placeholder=" "/>
-                              </div>
-                              <div class="w-full">
-                                <label>Company</label>
-                                <input type="text" name="company" class="border-2 border-black-900" placeholder=" "/>
-                              </div>
-                              <div>
-                                <label>Your message</label>
-                                <textarea type="text" name="message" rows="5" class="border-2 border-black-900" placeholder=" "></textarea>
-                              </div>
+                          <div class="grid gap-6 sm:grid-cols-2">
+                            <div class="relative z-0 col-span-2 sm:col-span-1">
+                              <input type="text" name="fname" class="peer block w-full appearance-none border-0 border-b-2 border-white bg-transparent py-2.5 px-0 text-base focus:border-black-900 focus:outline-none focus:ring-0" placeholder=" " />
+                              <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-base duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75">First Name</label>
                             </div>
-                            <button type="submit" class=" mt-5 rounded-md px-10 py-3 border-2 border-black-900">Send Message</button>
+                            <div class="relative z-0 col-span-2 sm:col-span-1">
+                              <input type="text" name="sname" class="peer block w-full appearance-none border-0 border-b-2 border-white bg-transparent py-2.5 px-0 text-base focus:border-black-900 focus:outline-none focus:ring-0" placeholder=" " />
+                              <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-base duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75">Surname</label>
+                            </div>
+                            <div class="relative z-0 col-span-2">
+                              <input type="email" name="email" class="peer block w-full appearance-none border-0 border-b-2 border-white bg-transparent py-2.5 px-0 text-base focus:border-black-900 focus:outline-none focus:ring-0" placeholder=" "/>
+                              <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-base duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75">Email</label>
+                            </div>
+                            <div class="relative z-0 col-span-2">
+                              <input type="text" name="company" class="peer block w-full appearance-none border-0 border-b-2 border-white bg-transparent py-2.5 px-0 text-base focus:border-black-900 focus:outline-none focus:ring-0" placeholder=" "/>
+                              <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-base duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75">Company</label>
+                            </div>
+                            <div class="relative z-0 col-span-2">
+                              <textarea type="text" name="message" rows="5" class="peer block w-full appearance-none border-0 border-b-2 border-white bg-transparent py-2.5 px-0 text-base focus:border-black-900 focus:outline-none focus:ring-0" placeholder=" "></textarea>
+                              <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-base duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75">Your message</label>
+                            </div>
+                          </div>
+                            <button type="submit" class="mt-5 rounded-md text-white bg-slate-800 hover:bg-transparent px-10 py-3 border-2 border-slate-800 hover:border-white">Send Message</button>
                           </form>
                         </div>
                     </div>
