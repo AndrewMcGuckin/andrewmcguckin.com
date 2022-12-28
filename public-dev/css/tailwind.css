@@ -2,9 +2,28 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-/* TODO 
+@layer components {
+    .btn-nav {
+      @apply hover:bg-teal-700 hover:text-white dark:hover:bg-teal-800 px-5 py-2 rounded-md text-lg font-semibold;
+    }
 
-Add extra breakpoints for large screens
-Add @apply styles to reduce class reuse
+    .form-input-container {
+        @apply relative z-0 col-span-2;
+    }
 
-*/
+    .form-input {
+        @apply block w-full appearance-none border-0 border-b-2 border-white bg-transparent py-2.5 px-0 text-base focus:border-black-900 focus:outline-none focus:ring-0;
+    }
+
+    .form-label {
+        @apply absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-base duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75;
+    }
+
+    .social-hover-btn { 
+        @apply basis-1/4 rounded-3xl py-9 shadow-xl transition ease-in-out delay-300 hover:-translate-y-1 hover:scale-110 duration-300;
+    }
+
+    .p-heading { 
+        @apply text-3xl py-4 font-semibold select-none;
+    }
+}

@@ -40,7 +40,7 @@
                 <div class="mx-auto py-4">
                   <div class="relative flex h-16 items-center justify-between">
                     
-                    <!-- Mobile menu-->
+                    <!-- Mobile nav-->
                     <div class="absolute inset-y-0 right-5 flex items-center md:hidden">
                         <button type="button" class="inline-flex items-center justify-center rounded-md p-2 text-black-900 hover:text-white hover:bg-teal-700 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" onclick=toggleMobileNav() aria-label="Toggle navigation">
                         <span class="sr-only">Open main menu</span>
@@ -56,7 +56,7 @@
                     </div>
               
   
-                    <!-- Main menu-->
+                    <!-- Main nav-->
                     <div class="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
                       <div>
                         <a href="index.html" class="flex flex-shrink-0 items-center space-x-4">
@@ -68,11 +68,11 @@
                       <div class="hidden md:ml-6 md:block">
                         <div class="absolute inset-y-3 right-5 items-center pr-9 flex space-x-4">
                           
-                          <a href="index.html" class="hover:bg-teal-700 hover:text-white px-5 py-2 rounded-md text-lg font-semibold" aria-current="page">Home</a>
+                          <a href="index.html" class="btn-nav" aria-current="page">Home</a>
         
                           <p class="text-primary py-2 font-medium">|</p>
               
-                          <a href="contact.html" class="hover:bg-teal-700 hover:text-white px-5 py-2 rounded-md text-lg font-semibold">Contact</a>
+                          <a href="contact.html" class="btn-nav">Contact</a>
         
                           <svg class="w-5 h-5 fill-black-900"><use xlink:href="#moon"/></svg>
         
@@ -123,27 +123,27 @@
                       
                           <form id="contact-form" autocomplete="on" class="lg:w-5/6 2xl:w-full mx-auto">
                             <div class="grid gap-6 sm:grid-cols-2">
-                              <div class="relative z-0 col-span-2 sm:col-span-1">
-                                <input type="text" name="fname" class="peer block w-full appearance-none border-0 border-b-2 border-white bg-transparent py-2.5 px-0 text-base focus:border-black-900 focus:outline-none focus:ring-0" placeholder=" " />
-                                <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-base duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75">First Name</label>
+                              <div class="form-input-container sm:col-span-1">
+                                <input type="text" name="fname" class="peer form-input" placeholder=" " />
+                                <label class="form-label">First Name</label>
                               </div>
-                              <div class="relative z-0 col-span-2 sm:col-span-1">
-                                <input type="text" name="sname" class="peer block w-full appearance-none border-0 border-b-2 border-white bg-transparent py-2.5 px-0 text-base focus:border-black-900 focus:outline-none focus:ring-0" placeholder=" " />
-                                <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-base duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75">Surname</label>
+                              <div class="form-input-container sm:col-span-1">
+                                <input type="text" name="sname" class="peer form-input" placeholder=" " />
+                                <label class="form-label">Surname</label>
                               </div>
-                              <div class="relative z-0 col-span-2">
-                                <input type="email" name="email" class="peer block w-full appearance-none border-0 border-b-2 border-white bg-transparent py-2.5 px-0 text-base focus:border-black-900 focus:outline-none focus:ring-0" placeholder=" "/>
-                                <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-base duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75">Email</label>
+                              <div class="form-input-container">
+                                <input type="email" name="email" class="peer form-input" placeholder=" "/>
+                                <label class="form-label">Email</label>
                               </div>
-                              <div class="relative z-0 col-span-2">
-                                <input type="text" name="company" class="peer block w-full appearance-none border-0 border-b-2 border-white bg-transparent py-2.5 px-0 text-base focus:border-black-900 focus:outline-none focus:ring-0" placeholder=" "/>
-                                <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-base duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75">Company</label>
+                              <div class="form-input-container">
+                                <input type="text" name="company" class="peer form-input" placeholder=" "/>
+                                <label class="form-label">Company</label>
                               </div>
-                              <div class="relative z-0 col-span-2">
-                                <textarea type="text" name="message" rows="5" class="peer block w-full appearance-none border-0 border-b-2 border-white bg-transparent py-2.5 px-0 text-base focus:border-black-900 focus:outline-none focus:ring-0" placeholder=" "></textarea>
-                                <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-base duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75">Message</label>
+                              <div class="form-input-container">
+                                <textarea type="text" name="message" rows="5" class="peer form-input" placeholder=" "></textarea>
+                                <label class="form-label">Message</label>
                               </div>
-                              <div class="relative z-0 col-span-2 mx-auto">
+                              <div class="form-input-container mx-auto">
                                 <button type="submit" class="rounded-md text-white bg-transparent hover:bg-black-900 px-8 py-3 md:px-10 md:py-3 border-2 border-white hover:border-black-900">Send Message</button>
                               </div>
                             </div>
@@ -161,17 +161,17 @@
 
                     <div class="flex flex-row flex-wrap 2xl:gap-y-4 mb-6 text-xl 2xl:text-2xl">
                         <div class="basis-full">
-                            <p class="text-3xl py-4 font-semibold select-none">Email</p>
+                            <p class="p-heading">Email</p>
                             <a class="select-all">work@andrewmcguckin.com</a>
                         </div>
 
                         <div class="basis-full">
-                          <p class="text-3xl py-4 font-semibold select-none">LinkedIn</p>
+                          <p class="p-heading">LinkedIn</p>
                           <p class="select-all">linkedin.com/u/andrew-mcg99</p>
                         </div>
 
                         <div class="basis-full">
-                            <p class="text-3xl py-4 font-semibold select-none">GitHub</p>
+                            <p class="p-heading">GitHub</p>
                             <p class="select-all">github.com/AndrewMcGuckin</p>
                         </div>
                     </div>
