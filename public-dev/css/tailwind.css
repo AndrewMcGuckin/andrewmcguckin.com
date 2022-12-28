@@ -1,0 +1,10 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* TODO 
+
+Add extra breakpoints for large screens
+Add @apply styles to reduce class reuse
+
+*/
