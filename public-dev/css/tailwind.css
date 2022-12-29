@@ -26,4 +26,44 @@
     .p-heading { 
         @apply text-3xl py-4 font-semibold select-none;
     }
+
+    .timeline-section {
+        @apply grid gap-4 mx-4 sm:grid-cols-12;
+    }
+
+    .timeline-header {
+        @apply text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0;
+    }
+
+    .timeline-point-line {
+        @apply col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:bg-gray-300;
+    }
+
+    .timeline-point {
+        @apply flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1];
+    }
+
+    .timeline-title {
+        @apply text-3xl font-semibold;
+    }
+
+
+
+    .timeline-content-section {
+        @apply relative col-span-12 px-4 space-y-6 sm:col-span-9;
+    }
+
+    .timeline-content-title {
+        @apply text-xl font-semibold tracking-wide;
+    }
+
+    .timeline-time {
+        @apply text-xs tracking-wide uppercase text-gray-300;
+    }
+
+    
+
+    .timeline-title-section {
+        @apply col-span-12 sm:col-span-3;
+    }
 }
