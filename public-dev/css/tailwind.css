@@ -28,7 +28,7 @@
     }
 
     .timeline-section {
-        @apply grid gap-4 mx-4 sm:grid-cols-12;
+        @apply grid gap-4 mx-4 sm:grid-cols-12 border-4 bg-cyan-900 rounded-3xl shadow-2xl py-8 px-8 hover:border-white;
     }
 
     .timeline-header {
@@ -61,7 +61,7 @@
         @apply text-xs tracking-wide uppercase text-gray-300;
     }
 
-    
+
 
     .timeline-title-section {
         @apply col-span-12 sm:col-span-3;
