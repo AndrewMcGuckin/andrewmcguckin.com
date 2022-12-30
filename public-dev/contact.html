@@ -34,15 +34,15 @@
 
     </head>
 
-    <body>
+    <body class="bg-custColour-100">
         <header>
-            <nav class="bg-gray-200">
+            <nav class="bg-custColour-200">
                 <div class="mx-auto py-4">
                   <div class="relative flex h-16 items-center justify-between">
                     
                     <!-- Mobile nav-->
                     <div class="absolute inset-y-0 right-5 flex items-center md:hidden">
-                        <button type="button" class="inline-flex items-center justify-center rounded-md p-2 text-black-900 hover:text-white hover:bg-teal-700 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" onclick=toggleMobileNav() aria-label="Toggle navigation">
+                        <button type="button" class="inline-flex items-center justify-center rounded-md p-2 text-black hover:text-white hover:bg-teal-700 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" onclick=toggleMobileNav() aria-label="Toggle navigation">
                         <span class="sr-only">Open main menu</span>
         
                         <svg id="open-nav" class="block h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -74,11 +74,11 @@
               
                           <a href="contact.html" class="btn-nav">Contact</a>
         
-                          <svg class="w-5 h-5 fill-black-900"><use xlink:href="#moon"/></svg>
+                          <svg class="w-5 h-5 fill-black"><use xlink:href="#moon"/></svg>
         
                           <label for="theme-toggle" class="inline-flex relative items-center cursor-pointer">
                             <input type="checkbox" value="" id="theme-toggle" class="sr-only peer">
-                            <div class="w-7 h-4 bg-black-900 rounded-full peer after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:after:translate-x-full peer-checked:bg-black-900 peer-checked:after:border-white" id="theme-switch"></div>
+                            <div class="w-7 h-4 bg-black rounded-full peer after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:after:translate-x-full peer-checked:bg-black peer-checked:after:border-white" id="theme-switch"></div>
                           </label>
                         </div>
                       </div>
@@ -93,11 +93,11 @@
                       <a href="contact.html" class="btn-nav block">Contact</a>
           
                       <div class="flex justify-center py-2 px-3 space-x-3">
-                        <svg class="w-5 h-5 text-black-900 fill-current mr-1"><use xlink:href="#moon"/></svg>
+                        <svg class="w-5 h-5 text-black fill-current mr-1"><use xlink:href="#moon"/></svg>
           
                         <label for="mobile-toggle" class="inline-flex relative items-center cursor-pointer">
                           <input type="checkbox" value="" id="mobile-toggle" class="sr-only peer">
-                              <div class="w-7 h-4 bg-black-900 rounded-full peer after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:after:translate-x-full peer-checked:bg-black-900 peer-checked:after:border-white" id="theme-switch"></div>
+                              <div class="w-7 h-4 bg-black rounded-full peer after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:after:translate-x-full peer-checked:bg-black peer-checked:after:border-white" id="theme-switch"></div>
                         </label>
           
                       </div>
@@ -144,7 +144,7 @@
                                 <label class="form-label">Message</label>
                               </div>
                               <div class="form-input-container mx-auto">
-                                <button type="submit" class="rounded-md text-white bg-transparent hover:bg-black-900 px-8 py-3 md:px-10 md:py-3 border-2 border-white hover:border-black-900">Send Message</button>
+                                <button type="submit" class="rounded-md text-white bg-transparent hover:bg-black px-8 py-3 md:px-10 md:py-3 border-2 border-white hover:border-black">Send Message</button>
                               </div>
                             </div>
                           </form>
@@ -183,7 +183,7 @@
                 </div>
             </div>
 
-            <footer class="py-9 mt-48 bg-gray-200 dark:bg-darkGrey-800">
+            <footer class="py-9 mt-48 bg-custColour-200 dark:bg-darkGrey-800">
                 <div class="right-0 font-semibold text-center">&copy; 2022 Andrew McGuckin</div>
             </footer>
         </main>
