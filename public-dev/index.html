@@ -100,60 +100,69 @@
 
     <main class="mx-auto text-center text-gray-100">
 
-      <div class="px-4 py-16 m-8 text-2xl bg-teal-700 rounded-3xl font-semibold select-none">
-        <h1 class="display-5 text-4xl font-bold">Hello I'm Andrew McGuckin!</h1>
-        <p class="py-5 mt-9 lead">A Summer 2022 Software Development graduate from the University of Stirling with a passion for technology and development.</p>
+      <div class="px-4 bg-teal-700 rounded-3xl font-semibold select-none
+                  py-12 md:py-16 
+                  m-8 my-32 sm:my-60 3xl:my-80 4xl:my-96 
+                  text-lg lg:text-xl 3xl:text-2xl 
+                  5xl:max-w-screen-4xl 5xl:mx-auto">
+        <h1 class="text-2xl lg:text-4xl font-bold">Hello I'm Andrew McGuckin!</h1>
+        <p class="py-5 md:mt-9 lead">A Summer 2022 Software Development graduate from the University of Stirling with a passion for technology and development.</p>
         <p class="py-5">Keep scrolling to discover my current experience and projects that I am working on.</p>
       </div>
 
-      <section name="experience" class=" text-gray-100 bg-cyan-800">
-        <div class="container max-w-5xl px-4 py-12 mx-auto">
-            <div class="text-4xl font-semibold mb-16">Current Experience</div>
+      <section name="experience" class=" text-gray-100 bg-cyan-800 w-full">
+        <div class="text-4xl font-semibold pt-8">Experience</div>
+        <div class="flex flex-row flex-wrap px-4 py-12 mx-auto">
+
             <!-- Education -->
+          <div class="timeline-section-container">
             <section id="education" class="timeline-section border-cyan-400">
-              <div class="timeline-title-section">
-                <div class="timeline-header before:bg-cyan-400">
-                  <h3 class="timeline-title">Education</h3>
+              <div class="timeline-header">
+                <div class="header-line before:bg-cyan-400">
+                  <h3 class="header-title">Education</h3>
                 </div>
               </div>
               <div class="timeline-content-section">
-                <div class="timeline-point-line">
-                  <div class="timeline-point before:bg-cyan-400">
-                    <h3 class="timeline-content-title">University of Stirling</h3>
-                    <p class="timeline-time">Summer 2020 - Summer 2022</p>
-                    <p class="mt-3">Studied a Bachelor of Science with Honours in Software Development with Cyber Security.</p>
-                    <p class="text-base tracking-wide uppercase font-bold mt-3">Grade Achieved - 1st Class</p>
+                <div class="content-point-line">
+                  <div class="content-point before:bg-cyan-400">
+                    <h3 class="content-title">University of Stirling</h3>
+                    <p class="content-duration">Summer 2020 - Summer 2022</p>
+                    <p class="mt-6 mb-3">Studied a Bachelor of Science with Honours in Software Development with Cyber Security.</p>
+                    <p class="text-sm uppercase font-bold mt-3">Grade Achieved - 1st Class</p>
                   </div>
-                  <div class="timeline-point before:bg-cyan-400">
-                    <h3 class="timeline-content-title">Forth Valley College</h3>
-                    <p class="timeline-time">2018 - 2020</p>
-                    <p class="mt-3">Completed a Higher National Diploma (HND) in Software Development. This was completed as the first two years of a joint BSc course between Forth Valley College and the University of Stirling.</p>
-                    <p class="text-base tracking-wide uppercase font-bold mt-3">Grade Achieved - A</p>
+                  <div class="content-point before:bg-cyan-400">
+                    <h3 class="content-title">Forth Valley College</h3>
+                    <p class="content-duration">2018 - 2020</p>
+                    <p class="mt-6 mb-3">Completed a Higher National Diploma (HND) in Software Development. This was completed as the first two years of a joint BSc course between Forth Valley College and the University of Stirling.</p>
+                    <p class="text-sm uppercase font-bold mt-3 mb-6">Grade Achieved - A</p>
                   </div>
                 </div>
               </div>
             </section>
+          </div>
+
             <!--Work Experience -->
-            <section id="work" class="timeline-section border-lime-400 mt-16">
-              <div class="timeline-title-section">
-                <div class="timeline-header before:bg-lime-400">
-                  <h3 class="timeline-title">Work</h3>
+          <div class="timeline-section-container 3.5xl:my-auto">
+            <section id="work" class="timeline-section border-lime-400 mt-16 3.5xl:mt-0">
+              <div class="timeline-header">
+                <div class="header-line before:bg-lime-400">
+                  <h3 class="header-title">Work</h3>
                   <span class="text-sm font-bold tracking-wide uppercase text-gray-300">Incl Placement</span>
                 </div>
               </div>
               <div class="timeline-content-section">
-                <div class="timeline-point-line">
-                  <div class="timeline-point before:bg-lime-400">
-                    <h3 class="timeline-content-title">Sprinkle Tops</h3>
-                    <h4 class="text-base font-semibold tracking-wide text-gray-300">Ice Cream Scooper</h4>
-                    <p class="timeline-time">Jul 2018 - Present</p>
+                <div class="content-point-line">
+                  <div class="content-point before:bg-lime-400">
+                    <h3 class="content-title">Sprinkle Tops</h3>
+                    <h4 class="text-base font-semibold tracking-wide text-gray-300 mb-1">Ice Cream Scooper</h4>
+                    <p class="content-duration">Jul 2018 - Present</p>
                     <p class="mt-3">To be expanded...</p>
                   </div>
-                  <div class="timeline-point before:bg-lime-400">
-                    <h3 class="timeline-content-title">Modus Scotland Ltd</h3>
-                    <h4 class="text-base font-semibold tracking-wide text-gray-300">Year 3 Summer Placement</h4>
-                    <p class="timeline-time">Summer 2021</p>
-                    <p class="mt-3">The task consisted of upgrading an in house solution to become a website to 
+                  <div class="content-point before:bg-lime-400">
+                    <h3 class="content-title">Modus Scotland Ltd</h3>
+                    <h4 class="text-base font-semibold tracking-wide text-gray-300 mb-1">Year 3 Summer Placement</h4>
+                    <p class="content-duration">Summer 2021</p>
+                    <p class="mt-3 mb-6">The task consisted of upgrading an in house solution to become a website to 
                       allow a user to keep track of a projects progress by logging the different jobs completed and 
                       the time/cost for each. Uncompleted jobs are displayed to the user along with details relating 
                       to different project metrics.</p>
@@ -161,33 +170,40 @@
                 </div>
               </div>
             </section>
+          </div>
+
             <!-- Certifications -->
-            <section id="certifications" class="timeline-section border-red-400 mt-16">
-              <div class="timeline-title-section">
-                <div class="timeline-header before:bg-red-400">
-                  <h3 class="timeline-title">Certifications</h3>
+          <div class="timeline-section-container 3.5xl:my-auto mb-8 4xl:mb-auto">
+            <section id="certifications" class="timeline-section border-red-400 mt-16 4xl:mt-0">
+              <div class="timeline-header">
+                <div class="header-line before:bg-red-400">
+                  <h3 class="header-title">Certifications</h3>
                 </div>
               </div>
               <div class="timeline-content-section">
-                <div class="timeline-point-line">
-                  <div class="timeline-point before:bg-red-400">
-                    <h3 class="timeline-content-title">Oracle Java Programming</h3>
-                    <p class="timeline-time">June 2020</p>
+                <div class="content-point-line">
+                  <div class="content-point before:bg-red-400">
+                    <h3 class="content-title">Oracle Java Programming</h3>
+                    <p class="content-duration">June 2020</p>
                   </div>
-                  <div class="timeline-point before:bg-red-400">
-                    <h3 class="timeline-content-title">Oracle Database Design and Programming with SQL</h3>
-                    <p class="timeline-time mb-6">June 2020</p>
+                  <div class="content-point before:bg-red-400">
+                    <h3 class="content-title">Oracle Database Design and Programming with SQL</h3>
+                    <p class="content-duration mb-6">June 2020</p>
                   </div>
                 </div>
               </div>
             </section>
+          </div>
+
         </div>
       </section>
 
       <section>
-        <div class="w-full text-4xl font-semibold pt-8 pb-4 text-black-900">Find me elsewhere</div>
+        <div class="w-full text-4xl font-semibold pt-8 pb-6 tracking-tight text-black-900">Contact or find me online</div>
 
-          <div class="flex flex-row flex-wrap justify-evenly px-9 py-5 text-black-900 font-semibold text-3xl">
+
+          <div class="flex flex-row flex-wrap justify-evenly 3xl:justify-center 3xl:space-x-24 4xl:space-x-36 lg:space-x-4 space-y-9 lg:space-y-0 px-9 py-5 text-black-900 font-semibold text-3xl">
+
               <a class="social-hover-btn bg-gray-100 hover:text-[#0077B5]" href="https://www.linkedin.com/in/andrew-mcg99">
                 <img class="mx-auto mb-7" src="../public-dev/resources/images/In-Blue-48-Γäó.png">
                 <p class="mb-1">LinkedIn</p>
