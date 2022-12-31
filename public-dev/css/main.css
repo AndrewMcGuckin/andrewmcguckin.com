@@ -1011,6 +1011,11 @@ video {
   margin-bottom: 8rem;
 }
 
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .my-9 {
   margin-top: 2.25rem;
   margin-bottom: 2.25rem;
@@ -1191,6 +1196,10 @@ video {
   -webkit-user-select: all;
      -moz-user-select: all;
           user-select: all;
+}
+
+.list-disc {
+  list-style-type: disc;
 }
 
 .flex-row {
@@ -1548,6 +1557,10 @@ video {
 
 .pt-16 {
   padding-top: 4rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -2008,6 +2021,21 @@ video {
     padding-bottom: 4rem;
   }
 
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .md\:pb-4 {
     padding-bottom: 1rem;
   }
@@ -2057,6 +2085,24 @@ video {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .lg\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .lg\:pl-8 {
+    padding-left: 2rem;
+  }
+
+  .lg\:pl-12 {
+    padding-left: 3rem;
   }
 
   .lg\:text-4xl {
@@ -2214,6 +2260,14 @@ video {
     padding-bottom: 16rem;
   }
 
+  .\34xl\:pl-3 {
+    padding-left: 0.75rem;
+  }
+
+  .\34xl\:pl-4 {
+    padding-left: 1rem;
+  }
+
   .\34xl\:text-center {
     text-align: center;
   }
@@ -2251,6 +2305,14 @@ video {
   .\35xl\:py-96 {
     padding-top: 24rem;
     padding-bottom: 24rem;
+  }
+
+  .\35xl\:pl-8 {
+    padding-left: 2rem;
+  }
+
+  .\35xl\:pl-12 {
+    padding-left: 3rem;
   }
 
   .\35xl\:text-center {
