@@ -32,161 +32,154 @@
         </symbol>
     </svg>
 
-    </head>
+  </head>
 
-    <body class="bg-custColour-100">
+  <body class="bg-custColour-100">
         <header>
-            <nav class="bg-custColour-200">
-                <div class="mx-auto py-4">
-                  <div class="relative flex h-16 items-center justify-between">
+          <nav class="bg-custColour-200">
+            <div class="mx-auto py-4">
+              <div class="relative flex h-16 items-center justify-between">
                     
-                    <!-- Mobile nav-->
-                    <div class="absolute inset-y-0 right-5 flex items-center md:hidden">
-                        <button type="button" class="inline-flex items-center justify-center rounded-md p-2 text-black hover:text-white hover:bg-teal-700 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" onclick=toggleMobileNav() aria-label="Toggle navigation">
-                        <span class="sr-only">Open main menu</span>
-        
-                        <svg id="open-nav" class="block h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>
-                        
-                        <svg id="close-nav" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                        </button>
-                    </div>
+                <!-- Mobile nav-->
+                <div class="absolute inset-y-0 right-5 flex items-center md:hidden">
+                  <button type="button" class="inline-flex items-center justify-center rounded-md p-2 text-black hover:text-white hover:bg-teal-700 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" onclick=toggleMobileNav() aria-label="Toggle navigation">
+                    <span class="sr-only">Open main menu</span>
+          
+                    <svg id="open-nav" class="block h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                          
+                    <svg id="close-nav" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
               
   
                     <!-- Main nav-->
-                    <div class="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
-                      <div>
-                        <a href="index.html" class="flex flex-shrink-0 items-center space-x-4">
-                          <img src="../public-dev/resources/images/logo-large.png" class="w-16 h-16 sm:ml-5">
-                          <h1 class="text-3xl font-bold hidden sm:block">Andrew McGuckin</h1>
-                        </a>
-                      </div>
+                <div class="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
+                    <div>
+                      <a href="index.html" class="flex flex-shrink-0 items-center space-x-4">
+                        <img src="../public-dev/resources/images/logo-large.png" class="w-16 h-16 sm:ml-5">
+                        <h1 class="text-3xl font-bold hidden sm:block">Andrew McGuckin</h1>
+                      </a>
+                    </div>
                       
-                      <div class="hidden md:ml-6 md:block">
-                        <div class="absolute inset-y-3 right-5 items-center pr-9 flex space-x-4">
+                    <div class="hidden md:ml-6 md:block">
+                      <div class="absolute inset-y-3 right-5 items-center pr-9 flex space-x-4">
                           
-                          <a href="index.html" class="btn-nav" aria-current="page">Home</a>
+                        <a href="index.html" class="btn-nav" aria-current="page">Home</a>
         
-                          <p class="text-primary py-2 font-medium">|</p>
+                        <p class="text-primary py-2 font-medium">|</p>
               
-                          <a href="contact.html" class="btn-nav">Contact</a>
+                        <a href="contact.html" class="btn-nav">Contact</a>
         
-                          <svg class="w-5 h-5 fill-black"><use xlink:href="#moon"/></svg>
+                        <svg class="w-5 h-5 fill-black"><use xlink:href="#moon"/></svg>
         
-                          <label for="theme-toggle" class="inline-flex relative items-center cursor-pointer">
-                            <input type="checkbox" value="" id="theme-toggle" class="sr-only peer">
-                            <div class="w-7 h-4 bg-black rounded-full peer after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:after:translate-x-full peer-checked:bg-black peer-checked:after:border-white" id="theme-switch"></div>
-                          </label>
-                        </div>
+                        <label for="theme-toggle" class="inline-flex relative items-center cursor-pointer">
+                          <input type="checkbox" value="" id="theme-toggle" class="sr-only peer">
+                          <div class="w-7 h-4 bg-black rounded-full peer after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:after:translate-x-full peer-checked:bg-black peer-checked:after:border-white" id="theme-switch"></div>
+                        </label>
                       </div>
                     </div>
                 </div>
+              </div>
 
-                <!-- Mobile menu, show/hide based on menu state. -->
-                <div class="hidden transition ease-in-out" id="mobile-nav">
-                    <div class="space-y-1 px-2 pt-2 pb-3 text-center text-lg font-semibold">
-                      <a href="index.html" class="btn-nav block" aria-current="page">Home</a>
+              <!-- Mobile menu, show/hide based on menu state. -->
+              <div class="hidden transition ease-in-out" id="mobile-nav">
+                  <div class="space-y-1 px-2 pt-2 pb-3 text-center text-lg font-semibold">
+                    <a href="index.html" class="btn-nav block" aria-current="page">Home</a>
           
-                      <a href="contact.html" class="btn-nav block">Contact</a>
+                    <a href="contact.html" class="btn-nav block">Contact</a>
           
-                      <div class="flex justify-center py-2 px-3 space-x-3">
-                        <svg class="w-5 h-5 text-black fill-current mr-1"><use xlink:href="#moon"/></svg>
+                    <div class="flex justify-center py-2 px-3 space-x-3">
+                      <svg class="w-5 h-5 text-black fill-current mr-1"><use xlink:href="#moon"/></svg>
           
-                        <label for="mobile-toggle" class="inline-flex relative items-center cursor-pointer">
-                          <input type="checkbox" value="" id="mobile-toggle" class="sr-only peer">
-                              <div class="w-7 h-4 bg-black rounded-full peer after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:after:translate-x-full peer-checked:bg-black peer-checked:after:border-white" id="theme-switch"></div>
-                        </label>
+                      <label for="mobile-toggle" class="inline-flex relative items-center cursor-pointer">
+                        <input type="checkbox" value="" id="mobile-toggle" class="sr-only peer">
+                        <div class="w-7 h-4 bg-black rounded-full peer after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:after:translate-x-full peer-checked:bg-black peer-checked:after:border-white" id="theme-switch"></div>
+                      </label>
           
-                      </div>
                     </div>
-          
                   </div>
-              </nav>
+              </div>
+            </div>
+          </nav>
         </header>
         
-        <main class="h-max">
-
-            <div class="text-5xl text-center font-bold m-16">
-                <h1>Contact</h1>
-            </div>
-
-            <div class="flex flex-row flex-wrap h-max">
-
-                <div class="order-first basis-full xl:basis-1/2">
-                    <div class="flex items-center justify-start lg:justify-center">
-                        <div class="w-full lg:w-3/4 xl:w-full p-8 2xl:p-16 m-4 lg:ml-8 lg:mr-8 2xl:ml-4 2xl:mr-4  bg-cyan-700 text-gray-100 rounded-3xl">
-
-                          <h1 class="text-3xl md:text-4xl font-medium mb-4 md:mb-8 text-center">Get in Touch</h1>
+        <main class="h-full">
+          <section class="my-6 3xl:py-20 4xl:py-64 5xl:py-96">
+              
+            <div class="flex flex-row flex-wrap h-full">
+              <section class="basis-full 2xl:basis-1/2 order-first">
+                  <div class="flex flex-row flex-nowrap h-full 4xl:text-center">
+                    <div class="my-auto w-full p-16 bg-cyan-700 text-white">
+                      <h1 class="text-3xl lg:text-4xl font-bold">Have a question?</h1>
+                      <h1 class="text-xl lg:text-2xl font-semibold mt-2">Get in touch or download my CV</h1>
                       
-                          <form id="contact-form" autocomplete="on" class="lg:w-5/6 2xl:w-full mx-auto">
-                            <div class="grid gap-6 sm:grid-cols-2">
-                              <div class="form-input-container sm:col-span-1">
-                                <input type="text" name="fname" class="peer form-input" placeholder=" " />
-                                <label class="form-label">First Name</label>
-                              </div>
-                              <div class="form-input-container sm:col-span-1">
-                                <input type="text" name="sname" class="peer form-input" placeholder=" " />
-                                <label class="form-label">Surname</label>
-                              </div>
-                              <div class="form-input-container">
-                                <input type="email" name="email" class="peer form-input" placeholder=" "/>
-                                <label class="form-label">Email</label>
-                              </div>
-                              <div class="form-input-container">
-                                <input type="text" name="company" class="peer form-input" placeholder=" "/>
-                                <label class="form-label">Company</label>
-                              </div>
-                              <div class="form-input-container">
-                                <textarea type="text" name="message" rows="5" class="peer form-input" placeholder=" "></textarea>
-                                <label class="form-label">Message</label>
-                              </div>
-                              <div class="form-input-container mx-auto">
-                                <button type="submit" class="rounded-md text-white bg-transparent hover:bg-black px-8 py-3 md:px-10 md:py-3 border-2 border-white hover:border-black">Send Message</button>
-                              </div>
-                            </div>
-                          </form>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="basis-full xl:basis-1/2 px-4 py-5 text-center text-white my-auto">
-                  <div class="mx-auto flex flex-row flex-wrap bg-teal-700 rounded-3xl sm:w-3/4 lg:w-2/3 xl:w-3/4">
-
-                    <div class="mx-auto pt-6 pb-2 md:pb-4">
-                      <svg class="w-16 h-16 md:w-24 md:h-24 fill-current"><use xlink:href="#person"/></svg>
-                    </div>
-
-                    <div class="flex flex-row flex-wrap 2xl:gap-y-4 mb-6 text-xl 2xl:text-2xl">
-                        <div class="basis-full">
-                            <p class="p-heading">Email</p>
-                            <a class="select-all">work@andrewmcguckin.com</a>
-                        </div>
-
-                        <div class="basis-full">
-                          <p class="p-heading">LinkedIn</p>
-                          <p class="select-all">linkedin.com/u/andrew-mcg99</p>
-                        </div>
-
-                        <div class="basis-full">
-                            <p class="p-heading">GitHub</p>
-                            <p class="select-all">github.com/AndrewMcGuckin</p>
-                        </div>
-                    </div>
-
-                    <div class="text-xl w-full py-6 mb-6">
-                        <a class="rounded-md border-2 border-white hover:bg-teal-600 px-7 py-3 select-none"><svg class="w-8 h-8 mb-2 mr-2 inline fill-current"><use xlink:href="#file-pdf"/></svg>Download CV</a>
+                      <div class="flex flex-row mt-6 md:mt-4">
+                        <a class="text-md lg:text-lg 4xl:mx-auto hover:text-black border-2 border-gray-100 hover:bg-gray-100 px-7 py-2 rounded-xl"><svg class="w-8 h-8 mb-1 mt-1 mr-2 inline fill-current"><use xlink:href="#file-pdf"/></svg>Download CV</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-            </div>
+              </section>
 
-            <footer class="py-9 mt-48 bg-custColour-200 dark:bg-darkGrey-800">
+              <section class="group basis-full 2xl:basis-1/2 bg-custColour-100">
+                  <div class="h-full relative">
+                      <div class="absolute invisible group-hover:visible h-full w-full">
+                        <div class="flex flex-row flex-nowrap h-full 5xl:text-center">
+                            <div class="my-auto w-full p-6 md:p-16 py-20 text-white bg-teal-700 border-l-4 border-transparent 2xl:border-white">
+                              <h1 class="text-2xl lg:text-4xl 4xl:text-5xl font-bold 2xl:mt-2 3xl:mt-5 4xl:mt-2">Uh oh!</h1>
+                              <h1 class="text-lg lg:text-xl 4xl:text-2xl">This contact form isn't quite ready yet.</h1>
+                              <p class="text-base lg:text-xl 4xl:text-2xl mt-6 3xl:mb-4">In the meantime please send an email to <strong>work@andrewmcguckin.com</strong></p>
+                            </div>
+                        </div>
+                      </div>
+                      
+                      
+                      <div class="group-hover:blur-md h-full select-none">
+                        <div class="flex flex-row flex-nowrap h-full">
+                          <div class="my-auto w-full p-8 md:p-16 py-20 border-8 border-cyan-700">
+                            <h1 class="text-center text-4xl font-semibold py-8">Contact</h1>
+                            <form id="contact-form" autocomplete="on" class="lg:w-5/6 2xl:w-full mx-auto">
+                              <div class="grid gap-6 sm:grid-cols-2">
+                                <div class="form-input-container sm:col-span-1">
+                                  <input type="text" name="fname" class="peer form-input" placeholder=" " disabled/>
+                                  <label class="form-label">First Name</label>
+                                </div>
+                                <div class="form-input-container sm:col-span-1">
+                                  <input type="text" name="sname" class="peer form-input" placeholder=" " disabled/>
+                                  <label class="form-label">Surname</label>
+                                </div>
+                                <div class="form-input-container">
+                                  <input type="email" name="email" class="peer form-input" placeholder=" " disabled/>
+                                  <label class="form-label">Email</label>
+                                </div>
+                                <div class="form-input-container">
+                                  <input type="text" name="company" class="peer form-input" placeholder=" " disabled/>
+                                  <label class="form-label">Company</label>
+                                </div>
+                                <div class="form-input-container">
+                                  <textarea type="text" name="message" rows="5" class="peer form-input" placeholder=" " disabled></textarea>
+                                  <label class="form-label">Message</label>
+                                </div>
+                                <div class="form-input-container mx-auto">
+                                  <button class="rounded-md text-black px-8 py-3 md:px-10 md:py-3 border-2 border-black" disabled>Send Message</button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+              </section>
+            </div>
+          </section>
+
+            <footer class="py-9 bg-custColour-200 dark:bg-darkGrey-800">
                 <div class="right-0 font-semibold text-center">&copy; 2022 Andrew McGuckin</div>
             </footer>
         </main>
         <script type="text/javascript" src="../public-dev/js/functions.js"></script>
-    </body>
+  </body>
 </html>
