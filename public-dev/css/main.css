@@ -1354,10 +1354,6 @@ video {
   background-color: rgb(15 118 110 / var(--tw-bg-opacity));
 }
 
-.bg-transparent {
-  background-color: transparent;
-}
-
 .bg-cyan-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(21 94 117 / var(--tw-bg-opacity));
@@ -1381,6 +1377,10 @@ video {
 .bg-gray-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .bg-\[\#E5E7EB\] {
@@ -1762,11 +1762,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:border-white:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
 .hover\:border-black:hover {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
@@ -1780,11 +1775,6 @@ video {
 .hover\:bg-gray-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-white:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gray-900:hover {
@@ -1820,6 +1810,10 @@ video {
 .hover\:text-\[\#0077B5\]:hover {
   --tw-text-opacity: 1;
   color: rgb(0 119 181 / var(--tw-text-opacity));
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
 }
 
 .focus\:outline-none:focus {
@@ -2236,11 +2230,6 @@ video {
 }
 
 @media (min-width: 3840px) {
-  .\35xl\:my-64 {
-    margin-top: 16rem;
-    margin-bottom: 16rem;
-  }
-
   .\35xl\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -2251,44 +2240,17 @@ video {
     margin-bottom: auto;
   }
 
-  .\35xl\:my-96 {
-    margin-top: 24rem;
-    margin-bottom: 24rem;
-  }
-
   .\35xl\:mt-0 {
     margin-top: 0px;
-  }
-
-  .\35xl\:mt-96 {
-    margin-top: 24rem;
-  }
-
-  .\35xl\:h-screen {
-    height: 100vh;
   }
 
   .\35xl\:max-w-screen-4xl {
     max-width: 2560px;
   }
 
-  .\35xl\:place-self-end {
-    place-self: end;
-  }
-
   .\35xl\:py-96 {
     padding-top: 24rem;
     padding-bottom: 24rem;
-  }
-
-  .\35xl\:py-0 {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
-  .\35xl\:py-64 {
-    padding-top: 16rem;
-    padding-bottom: 16rem;
   }
 
   .\35xl\:text-center {
