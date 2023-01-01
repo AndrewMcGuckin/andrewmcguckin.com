@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personal Portfolio Website">
+    <meta name="author" content="Andrew McGuckin">
+    <title>Andrew McGuckin</title>
+    
+    <link rel="icon" href="../resources/images/logo-large.png">
+    <link href="../css/main.css" rel="stylesheet">
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      
+      <!-- Nav bar icons-->
+
+      <symbol id="moon" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+      </symbol>
+
+      <symbol id="letter-plus" viewBox="0 0 16 16">
+          <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
+          <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 0 0 1 0v-1h1a.5.5 0 0 0 0-1h-1v-1a.5.5 0 0 0-.5-.5Z"/>
+      </symbol>
+    </svg>
+
+  </head>
+
+
+  <body class="bg-gray-300 dark:bg-black-700 text-black-900 dark:text-lightGrey" id="mainBody">
+    <header>
+      <nav class="bg-gray-200 dark:bg-darkGrey-700">
+        <div class="mx-auto py-4">
+          <div class="relative flex h-16 items-center justify-between">
+
+            <!-- Mobile menu-->
+            <div class="absolute inset-y-0 right-5 flex items-center md:hidden">
+              <button type="button" class="inline-flex items-center justify-center rounded-md p-2 text-black-900 dark:text-lightGrey hover:text-white hover:bg-teal-700 dark:hover:bg-black-800  focus:outline-none dark:focus:ring-2 dark:focus:ring-inset dark:focus:ring-white" aria-controls="mobile-menu" aria-expanded="false" onclick=toggleMobileNav() aria-label="Toggle navigation">
+                <span class="sr-only">Open main menu</span>
+
+                <svg id="open-nav" class="block h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                
+                <svg id="close-nav" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            
+
+            <!-- Main menu-->
+            <div class="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
+              
+              <div>
+                <a href="index-dev.html" class="flex flex-shrink-0 items-center space-x-4">
+                  <img src="../resources/images/logo-large.png" class="w-16 h-16 sm:ml-5">
+                  <h1 class="text-3xl font-bold hidden sm:block">Andrew McGuckin</h1>
+                </a>
+              </div>
+              
+              <div class="hidden md:ml-6 md:block">
+                <div class="absolute inset-y-3 right-5 items-center pr-9 flex space-x-4">
+                  
+                  <a href="index-dev.html" class="btn-nav" aria-current="page">Home</a>
+
+                  <p class="text-primary py-2 font-medium">|</p>
+      
+                  <a href="contact-dev.html" class="btn-nav">Contact</a>
+
+                  <svg class="w-5 h-5 fill-black-900 dark:fill-lightGrey dark-toggle"><use xlink:href="#moon"/></svg>
+
+                  <label for="theme-toggle" class="inline-flex relative items-center cursor-pointer" id="dark-toggle" onclick=darkMode()>
+                    <input type="checkbox" value="" id="theme-toggle" class="sr-only peer">
+                    <div class="w-7 h-4
+                    btn-left 
+                    bg-black-900 
+                    dark:bg-lightGrey
+                    rounded-full 
+                    peer 
+
+                    after:content-[''] 
+                    after:absolute 
+                    after:top-0.5 
+                    after:left-[2px] 
+                    after:bg-white
+                    dark:after:bg-darkGrey-800
+                    after:border 
+                    dark:after:border-darkGrey-800
+                    after:rounded-full 
+                    after:h-3 
+                    after:w-3 
+                    after:transition-all 
+                     
+                    peer-checked:after:translate-x-full 
+                    peer-checked:bg-black-900
+                    peer-checked:after:border-white 
+                    peer-checked:dark:bg-lightGrey
+                    peer-checked:dark:after:border-darkGrey-800" id="theme-switch"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="hidden transition ease-in-out" id="mobile-nav">
+            <div class="space-y-1 px-2 pt-2 pb-3 text-center text-lg font-semibold">
+              <a href="../html/index-dev.html" class="btn-nav block" aria-current="page">Home</a>
+
+              <a href="../html/contact-dev.html" class="btn-nav block">Contact</a>
+
+              <div class="flex justify-center py-2 px-3 space-x-3">
+                <svg class="w-5 h-5 text-black-900 fill-current mr-1"><use xlink:href="#moon"/></svg>
+
+                <label for="mobile-toggle" class="inline-flex relative items-center cursor-pointer">
+                  <input type="checkbox" value="" id="mobile-toggle" class="sr-only peer">
+                      <div class="w-7 h-4 bg-black-900 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-1 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-3 after:w-3 after:transition-all dark:border-gray-600 peer-checked:bg-black"></div>
+                </label>
+
+                
+              </div>
+              
+              <label for="theme-toggle" class="inline-flex relative items-center cursor-pointer" id="dark-toggle" onclick="darkMode()">
+                  <input type="checkbox" value="" id="theme-toggle" class="sr-only peer">
+                  <div class="w-7 h-4
+                  unchecked 
+                  bg-black-900 
+                  dark:bg-lightGrey
+                  rounded-full 
+                  peer 
+
+                  after:content-[''] 
+                  after:absolute 
+                  after:top-0.5 
+                  after:left-[2px] 
+                  after:bg-white
+                  dark:after:bg-darkGrey-800
+                  after:border 
+                  dark:after:border-darkGrey-800
+                  after:rounded-full 
+                  after:h-3 
+                  after:w-3 
+                  after:transition-all 
+                   
+                  peer-checked:after:translate-x-full 
+                  peer-checked:bg-black-900
+                  peer-checked:after:border-white 
+                  peer-checked:dark:bg-lightGrey
+                  peer-checked:dark:after:border-darkGrey-800" id="theme-switch"></div>
+                </label>
+
+                <label for="toggleTwo" class="flex cursor-pointer select-none items-center">
+                  <div class="relative">
+                    <input type="checkbox" id="toggleTwo" class="sr-only" />
+                    <div class="block h-8 w-14 rounded-full bg-[#E5E7EB]"></div>
+                    <div
+                      class="dot absolute left-1 top-1 h-6 w-6 rounded-full bg-white transition"
+                    ></div>
+                  </div>
+                </label>
+                
+            </div>
+        </div>
+      </nav>
+    </header>
+
+
+
+    <main class="h-max mx-auto text-center text-gray-100">
+
+        <h1 class="pt-16 text-4xl text-black-900 font-bold">Home - DEV</h1>
+
+        <div class="px-4 py-16 m-8 text-2xl bg-teal-700 rounded-3xl font-semibold select-none">
+          <h1 class="display-5 text-4xl font-bold">Hello I'm Andrew McGuckin!</h1>
+          <p class="py-5 mt-9 lead">A Summer 2022 Software Development graduate from the University of Stirling with a passion for technology and development.</p>
+          <p class="py-5">Scroll down to discover my current experience and projects that I am working on.</p>
+        </div>
+
+        <div class="flex flex-row flex-wrap justify-evenly md:space-x-4 space-y-9 md:space-y-0 px-9 py-5 text-black-900 font-semibold text-3xl">
+
+            <a class="basis-full md:basis-1/4 rounded-3xl bg-gray-100 dark:bg-[#CCE5FF] py-9 shadow-xl 
+            transition ease-in-out delay-300 hover:-translate-y-1 hover:scale-110 duration-300 hover:text-[#0077B5]" href="https://www.linkedin.com/in/andrew-mcg99">
+              <img class="mx-auto mb-7" src="../resources/images/In-Blue-48-Γäó.png">
+              <p class="mb-1">LinkedIn</p>
+            </a> 
+
+          <a class="basis-full md:basis-1/4 rounded-3xl bg-teal-600 dark:bg-teal-800 text-gray-100 py-9 shadow-xl
+          transition ease-in-out delay-300 hover:-translate-y-1 hover:scale-110 duration-300" href="../html/contact.html">
+              <svg class="w-12 h-12 fill-current mx-auto mb-7"><use xlink:href="#letter-plus"/></svg>
+              <p>Contact</p>
+          </a>
+
+          <a class="basis-full md:basis-1/4 rounded-3xl bg-gray-200 dark:bg-[#BAC8D3] py-9 shadow-xl
+          transition ease-in-out delay-300 hover:-translate-y-1 hover:scale-110 duration-300" href="https://www.github.com/AndrewMcGuckin">
+            <img class="mx-auto mb-7 w-12" src="../resources/images/GitHub-Mark-64px.png">
+            <p>GitHub</p>
+          </a>
+
+        </div> 
+
+        <footer class="py-9 mt-16 bg-gray-200 dark:bg-darkGrey-800 text-black-900">
+          <div class="right-0 font-semibold text-center">&copy; 2022 Andrew McGuckin</div>
+        </footer>
+
+    </main>
+    <script type="text/javascript" src="../js/functions.js"></script>
+  </body>
+</html>

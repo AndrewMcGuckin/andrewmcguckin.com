@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact Me - Andrew McGuckin">
+    <meta name="author" content="Andrew McGuckin">
+    <title>Contact</title>
+
+    <link href="../css/stylesheet.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="moon" viewBox="0 0 16 16">
+            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        </symbol>
+        <symbol id="download" viewBox="0 0 16 16">
+            <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+            <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>  
+        </symbol>
+        <symbol id="file-pdf" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14
+            4.5ZM1.6 11.85H0v3.999h.791v-1.342h.803c.287 0 .531-.057.732-.173.203-.117.358-.275.463-.474a1.42 1.42 0 0 0 .161-.677c0-.25-.053-.476-.158-.677a1.176 
+            1.176 0 0 0-.46-.477c-.2-.12-.443-.179-.732-.179Zm.545 1.333a.795.795 0 0 1-.085.38.574.574 0 0 1-.238.241.794.794 0 0 1-.375.082H.788V12.48h.66c.218 
+            0 .389.06.512.181.123.122.185.296.185.522Zm1.217-1.333v3.999h1.46c.401 0 .734-.08.998-.237a1.45 1.45 0 0 0 .595-.689c.13-.3.196-.662.196-1.084 
+            0-.42-.065-.778-.196-1.075a1.426 1.426 0 0 0-.589-.68c-.264-.156-.599-.234-1.005-.234H3.362Zm.791.645h.563c.248 0 .45.05.609.152a.89.89 0 0 
+            1 .354.454c.079.201.118.452.118.753a2.3 2.3 0 0 1-.068.592 1.14 1.14 0 0 1-.196.422.8.8 0 0 1-.334.252 1.298 1.298 0 0 1-.483.082h-.563v-2.707Zm3.743 
+            1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638H7.896Z"/>
+        </symbol>
+        <symbol id="person" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+        </symbol>
+    </svg>
+
+    </head>
+
+    <body class="bg-gray-300" id="mainBody">
+        <header>
+            <nav class="bg-gray-200 ">
+                <div class="mx-auto py-4">
+                  <div class="relative flex h-16 items-center justify-between">
+                        <div class="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
+                            <div class="flex flex-shrink-0 items-center pl-4">
+                            <img src="../resources/images/logo-header.png" class="w-16 h-16">
+                            <a class="hidden sm:block"href="index.html"><h1 class="px-3 text-3xl font-bold" href="index.html">Andrew McGuckin</h1></a>
+                            </div>
+                            
+                            <div class="hidden md:ml-6 md:block">
+                            <div class="absolute inset-y-3 right-5 items-center pr-9 flex space-x-4">
+                                
+                                <a href="index.html" class="text-primary hover:bg-gray-900 hover:text-white px-5 py-2 rounded-md text-lg font-semibold" aria-current="page">Home</a>
+            
+                                <p class="text-primary py-2 font-medium">|</p>
+                    
+                                <a href="contact.html" class="text-primary hover:bg-gray-900 hover:text-white px-5 py-2 rounded-md text-lg font-semibold">Contact</a>
+            
+                                <svg class="w-5 h-5 text-black fill-current"><use xlink:href="#moon"/></svg>
+            
+                                <label for="default-toggle" class="inline-flex relative items-center cursor-pointer">
+                                <input type="checkbox" value="" id="default-toggle" class="sr-only peer">
+                                <div class="w-7 h-4 bg-black rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-3 after:w-3 after:transition-all dark:border-gray-600 peer-checked:bg-black"></div>
+                                </label>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+        <main class="h-max">
+
+            <div class="container mx-auto ">
+                <div class="px-4 py-5 my-9 text-center mb-8 border rounded-3xl bg-gray-200">
+                    <img class="d-block mx-auto mb-4" src="../resources/images/logo-header.png" alt="" width="100" height="100">
+                    <h1 class="display-5 text-4xl pt-5 font-semibold">Contact Me</h1>
+                    <div class="col-lg-6 mx-auto">
+                    <p class="lead p-9 text-xl font-semibold">This page is currently under development.</p>
+                    <div class="d-grid pb-5 d-sm-flex justify-content-sm-center">
+                        <a type="button" class="text-primary border-2 border-gray-600 hover:bg-gray-900 hover:text-white px-5 py-2 rounded-md text-lg font-semibold" href="../html/index.html">Return to Homepage</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <footer class=" py-9 footer-bgd">
+                <div class="right-0 font-semibold text-center">
+                  &copy; 2022 Andrew McGuckin
+                </div>
+              </footer>
+        </main>
+        <script src="../js/custom.js"></script>
+    </body>
+</html>
