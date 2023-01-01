@@ -1,0 +1,72 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer components {
+    .btn-nav {
+      @apply hover:bg-teal-700 hover:text-white dark:hover:bg-teal-800 px-5 py-2 rounded-md text-lg font-semibold;
+    }
+
+    .form-input-container {
+        @apply relative z-0 col-span-2;
+    }
+
+    .form-input {
+        @apply block w-full appearance-none border-0 border-b-2 border-black bg-transparent py-2.5 px-0 text-base focus:border-white focus:outline-none focus:ring-0;
+    }
+
+    .form-label {
+        @apply absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-base duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75;
+    }
+
+    .social-hover-btn { 
+        @apply basis-full md:basis-2/3 lg:basis-1/4 3xl:max-w-md 4xl:max-w-lg 5xl:max-w-2xl 5xl:py-12 rounded-3xl py-9 shadow-xl transition ease-in-out delay-300 hover:-translate-y-1 hover:scale-110 duration-300;
+         
+    }
+
+    .p-heading { 
+        @apply text-3xl py-4 font-semibold select-none;
+    }
+
+
+
+    .timeline-section-container {
+        @apply mx-auto basis-full max-w-6xl 4xl:basis-1/3 4xl:max-w-none;
+    }
+
+    .timeline-section {
+        @apply grid gap-4 mx-4 sm:grid-cols-12 border-4 bg-cyan-900 rounded-3xl shadow-2xl py-8 px-8 hover:border-white;
+    }
+
+
+    .timeline-header {
+        @apply col-span-12 lg:col-span-3;
+    }
+    .header-line {
+        @apply text-center lg:text-left mb-4 lg:mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto lg:before:mx-0;
+    }
+    .header-title {
+        @apply text-3xl font-semibold;
+    }
+
+
+    .timeline-content-section {
+            @apply relative col-span-12 px-0 lg:px-4 space-y-6 lg:col-span-9;
+    }
+    .content-point-line {
+        @apply col-span-12 space-y-12 relative px-4 lg:col-span-8 lg:space-y-8 lg:before:absolute lg:before:top-2 lg:before:bottom-0 lg:before:w-0.5 lg:before:-left-3 before:bg-gray-300;
+    }
+    .content-point {
+        @apply flex flex-col lg:relative lg:before:absolute lg:before:top-2 lg:before:w-4 lg:before:h-4 lg:before:rounded-full lg:before:left-[-35px] lg:before:z-[1];
+    }
+    .content-title {
+        @apply text-xl font-semibold tracking-wide mb-2;
+    }
+    .content-duration {
+        @apply text-xs tracking-wide uppercase text-gray-300;
+    }
+
+    .card-container {
+        @apply col-span-12 xl:col-span-4 p-8 border-t-4 bg-neutral-100 shadow-2xl;
+    }
+}
