@@ -1,16 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Personal Portfolio Website">
+    <meta name="description" content="Personal Portfolio Website for Andrew McGuckin showcasing current experience and projects.">
     <meta name="author" content="Andrew McGuckin">
-    <title>Andrew McGuckin</title>
+    <title>Andrew McGuckin Portfolio</title>
     
     <link href="../public-dev/css/main.css" rel="stylesheet">
-
+    <!-- Page Icons-->
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-      <!-- Page Icons-->
       <symbol id="moon" viewBox="0 0 16 16">
         <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
       </symbol>
@@ -40,7 +39,6 @@
       <nav class="bg-custColour-200">
         <div class="mx-auto py-4">
           <div class="relative flex h-16 items-center justify-between">
-
             <!-- Mobile nav-->
             <div class="absolute inset-y-0 right-5 flex items-center md:hidden">
               <button type="button" class="inline-flex items-center justify-center rounded-md p-2 text-black hover:text-white hover:bg-teal-700 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" onclick=toggleMobileNav() aria-label="Toggle navigation">
@@ -55,51 +53,30 @@
                 </svg>
               </button>
             </div>
-            
-
             <!-- Main nav-->
             <div class="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
-              <div>
+              <div">
                 <a href="index.html" class="flex flex-shrink-0 items-center space-x-4">
                   <img src="../public-dev/resources/images/logo-large.png" class="w-16 h-16 sm:ml-5">
                   <h1 class="text-3xl font-bold hidden sm:block">Andrew McGuckin</h1>
                 </a>
               </div>
-              
               <div class="hidden md:ml-6 md:block">
                 <div class="absolute inset-y-3 right-5 items-center pr-9 flex space-x-4">
-                  
                   <a href="index.html" class="btn-nav" aria-current="page">Home</a>
-
-                  <p class="text-primary py-2 font-medium">|</p>
-      
+                  <p>|</p>
                   <a href="contact.html" class="btn-nav">Contact</a>
-
-                  <svg class="w-5 h-5 fill-black"><use xlink:href="#moon"/></svg>
-
-                  <label for="theme-toggle" class="inline-flex relative items-center cursor-pointer">
-                    <input type="checkbox" value="" id="theme-toggle" class="sr-only peer">
-                    <div class="w-7 h-4 bg-black rounded-full peer after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:after:translate-x-full peer-checked:bg-black peer-checked:after:border-white" id="theme-switch"></div>
-                  </label>
                 </div>
               </div>
             </div>
           </div>
-
-             <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="hidden transition ease-in-out" id="mobile-nav">
-          <div class="space-y-1 px-2 pt-2 pb-3 text-center text-lg font-semibold">
-            <a href="index.html" class="btn-nav block" aria-current="page">Home</a>
-            <a href="contact.html" class="btn-nav block">Contact</a>
-            <div class="flex justify-center py-2 px-3 space-x-3">
-              <svg class="w-5 h-5 text-black fill-current mr-1"><use xlink:href="#moon"/></svg>
-              <label for="mobile-toggle" class="inline-flex relative items-center cursor-pointer">
-                <input type="checkbox" value="" id="mobile-toggle" class="sr-only peer">
-                    <div class="w-7 h-4 bg-black rounded-full peer after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:after:translate-x-full peer-checked:bg-black peer-checked:after:border-white" id="theme-switch"></div>
-              </label>
+          <!-- Mobile menu, show/hide based on menu state. -->
+          <div class="hidden transition ease-in-out" id="mobile-nav">
+            <div class="space-y-1 px-2 pt-2 pb-3 text-center text-lg font-semibold">
+              <a href="index.html" class="btn-nav block" aria-current="page">Home</a>
+              <a href="contact.html" class="btn-nav block">Contact</a>
             </div>
           </div>
-        </div>
       </nav>
     </header>
 
@@ -116,7 +93,7 @@
       </div>
 
       <section name="experience" class=" text-gray-100 bg-cyan-800 w-full">
-        <div class="text-4xl font-semibold pt-8">Experience</div>
+        <div class="text-4xl font-semibold pt-16 pb-4">Experience</div>
         <div class="flex flex-row flex-wrap px-4 py-12 mx-auto">
 
             <!-- Education -->
@@ -173,8 +150,6 @@
                         <li>Working flexibly including swapping shifts with other members of staff at short notice.</li>
                       </ul>
                     </div>
-                    
-                    
                   </div>
                   <div class="content-point before:bg-lime-400">
                     <h3 class="content-title">Modus Scotland Ltd</h3>
@@ -269,11 +244,10 @@
       <section>
         <div class="w-full text-4xl font-semibold pt-8 pb-6 tracking-tight text-black">Contact or locate me here</div>
           <div class="flex flex-row flex-wrap justify-evenly 3xl:justify-center 3xl:space-x-24 4xl:space-x-36 lg:space-x-4 space-y-9 lg:space-y-0 px-9 py-5 text-black font-semibold text-3xl">
-
-              <a class="social-hover-btn bg-white hover:text-linkedinBlue" href="https://www.linkedin.com/in/andrew-mcg99" aria-label="LinkedIn">
-                <img class="mx-auto mb-7" src="../public-dev/resources/images/In-Blue-48-Γäó.png" >
-                <p class="mb-1">LinkedIn</p>
-              </a> 
+            <a class="social-hover-btn bg-white hover:text-linkedinBlue" href="https://www.linkedin.com/in/andrew-mcg99" aria-label="LinkedIn">
+              <img class="mx-auto mb-7" src="../public-dev/resources/images/In-Blue-48-Γäó.png" >
+              <p class="mb-1">LinkedIn</p>
+            </a> 
             <a class="social-hover-btn bg-teal-600 text-gray-100" href="contact.html">
                 <svg class="w-12 h-12 fill-current mx-auto mb-7"><use xlink:href="#letter-plus"/></svg>
                 <p>Contact</p>
