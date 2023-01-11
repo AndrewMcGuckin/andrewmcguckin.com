@@ -2,8 +2,8 @@ module.exports = {
   content: {
     relative: true,
     files: [
-      "./public-dev/**/*.{html,js}",
-      "./public-dev/*.{html,js}"
+      "./public/**/*.{html,js}",
+      "./public/*.{html,js}"
     ]
   },
   darkMode: 'class',

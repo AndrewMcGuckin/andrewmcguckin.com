@@ -4,8 +4,8 @@
   "description": "Portfolio Website",
   "main": "index.html",
   "scripts": {
-    "tailwind_build": "tailwindcss -i ./public-dev/css/tailwind.css -o ./public-dev/css/main.css",
-    "tailwind_dev": "tailwindcss -i ./public-dev/css/tailwind.css -o ./public-dev/css/main.css --watch",
+    "tailwind_build": "tailwindcss -i ./public/css/tailwind.css -o ./public/css/main.css",
+    "tailwind_dev": "tailwindcss -i ./public/css/tailwind.css -o ./public/css/main.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
