@@ -1403,6 +1403,11 @@ video {
   padding-right: 2.25rem;
 }
 
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .pr-9 {
   padding-right: 2.25rem;
 }
