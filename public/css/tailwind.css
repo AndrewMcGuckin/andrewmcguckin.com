@@ -35,7 +35,7 @@
     }
 
     .timeline-section {
-        @apply grid gap-4 mx-4 sm:grid-cols-12 border-4 bg-cyan-900 rounded-3xl shadow-2xl py-8 px-8 hover:border-white;
+        @apply grid gap-4 mx-4 sm:grid-cols-12 border-4 rounded-3xl shadow-2xl py-8 px-8 hover:border-slate-800;
     }
 
 
@@ -54,7 +54,7 @@
         @apply relative col-span-12 px-0 lg:px-4 space-y-6 lg:col-span-9;
     }
     .content-point-line {
-        @apply col-span-12 space-y-12 relative px-4 lg:col-span-8 lg:space-y-8 lg:before:absolute lg:before:top-2 lg:before:bottom-0 lg:before:w-0.5 lg:before:-left-3 before:bg-gray-300;
+        @apply col-span-12 space-y-12 relative px-4 lg:col-span-8 lg:space-y-8 lg:before:absolute lg:before:top-2 lg:before:bottom-0 lg:before:w-0.5 lg:before:-left-3 before:bg-slate-800;
     }
     .content-point {
         @apply flex flex-col lg:relative lg:before:absolute lg:before:top-2 lg:before:w-4 lg:before:h-4 lg:before:rounded-full lg:before:left-[-35px] lg:before:z-[1];
@@ -63,7 +63,7 @@
         @apply text-xl font-semibold tracking-wide mb-2;
     }
     .content-duration {
-        @apply text-xs tracking-wide uppercase text-gray-300;
+        @apply text-xs tracking-wide uppercase text-gray-700;
     }
 
     .card-container {
