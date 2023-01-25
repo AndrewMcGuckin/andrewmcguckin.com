@@ -67,6 +67,6 @@
     }
 
     .card-container {
-        @apply col-span-12 xl:col-span-4 p-8 border-t-4 bg-neutral-100 shadow-2xl;
+        @apply col-span-12 xl:col-span-6 3xl:col-span-4 3xl:max-w-screen-md 5xl:max-w-none p-8 border-t-4 bg-neutral-100 rounded-b-3xl shadow-2xl;
     }
 }
