@@ -35,7 +35,7 @@
     }
 
     .timeline-section {
-        @apply grid gap-4 mx-4 sm:grid-cols-12 border-4 rounded-3xl shadow-2xl py-8 px-4 sm:px-8 hover:border-slate-800 3xl:max-w-screen-2xl 5xl:max-w-screen-4xl 3xl:mx-auto;
+        @apply grid gap-4 mx-4 sm:grid-cols-12 border-4 rounded-3xl shadow-2xl py-8 px-4 sm:px-8 3xl:max-w-screen-2xl 5xl:max-w-screen-4xl 3xl:mx-auto;
     }
 
 
