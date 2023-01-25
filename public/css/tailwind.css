@@ -35,7 +35,7 @@
     }
 
     .timeline-section {
-        @apply grid gap-4 mx-4 sm:grid-cols-12 border-4 rounded-3xl shadow-2xl py-8 px-8 hover:border-slate-800 3xl:max-w-screen-2xl 5xl:max-w-screen-4xl 3xl:mx-auto;
+        @apply grid gap-4 mx-4 sm:grid-cols-12 border-4 rounded-3xl shadow-2xl py-8 px-4 sm:px-8 hover:border-slate-800 3xl:max-w-screen-2xl 5xl:max-w-screen-4xl 3xl:mx-auto;
     }
 
 
@@ -46,7 +46,7 @@
         @apply text-center lg:text-left mb-4 lg:mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto lg:before:mx-0;
     }
     .header-title {
-        @apply text-3xl font-semibold;
+        @apply text-3xl 3xl:text-4xl 5xl:text-5xl font-semibold;
     }
 
 
@@ -60,10 +60,10 @@
         @apply flex flex-col lg:relative lg:before:absolute lg:before:top-2 lg:before:w-4 lg:before:h-4 lg:before:rounded-full lg:before:left-[-35px] lg:before:z-[1];
     }
     .content-title {
-        @apply text-xl font-semibold tracking-wide mb-2;
+        @apply text-xl 3xl:text-2xl 5xl:text-3xl font-semibold tracking-wide mb-2;
     }
     .content-duration {
-        @apply text-xs tracking-wide uppercase text-gray-700;
+        @apply text-xs 3xl:text-sm 5xl:text-base tracking-wide uppercase text-gray-700;
     }
 
     .card-container {

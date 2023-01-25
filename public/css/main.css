@@ -684,8 +684,8 @@ video {
   border-width: 4px;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -699,6 +699,8 @@ video {
 @media (min-width: 640px) {
   .timeline-section {
     grid-template-columns: repeat(12, minmax(0, 1fr));
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -759,6 +761,20 @@ video {
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: 600;
+}
+
+@media (min-width: 1920px) {
+  .header-title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 3840px) {
+  .header-title {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 
 .timeline-content-section {
@@ -858,6 +874,20 @@ video {
   letter-spacing: 0.025em;
 }
 
+@media (min-width: 1920px) {
+  .content-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 3840px) {
+  .content-title {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
 .content-duration {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -865,6 +895,20 @@ video {
   letter-spacing: 0.025em;
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1920px) {
+  .content-duration {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 3840px) {
+  .content-duration {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 .card-container {
@@ -1646,6 +1690,11 @@ video {
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1844,6 +1893,11 @@ video {
     font-size: 1.5rem;
     line-height: 2rem;
   }
+
+  .\33xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 2560px) {
@@ -1859,14 +1913,6 @@ video {
 
   .\34xl\:mt-2 {
     margin-top: 0.5rem;
-  }
-
-  .\34xl\:mb-auto {
-    margin-bottom: auto;
-  }
-
-  .\34xl\:mt-0 {
-    margin-top: 0px;
   }
 
   .\34xl\:space-x-36 > :not([hidden]) ~ :not([hidden]) {
@@ -1928,5 +1974,15 @@ video {
 
   .\35xl\:text-center {
     text-align: center;
+  }
+
+  .\35xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .\35xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
