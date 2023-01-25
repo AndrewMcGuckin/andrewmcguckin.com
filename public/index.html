@@ -84,7 +84,7 @@
       </nav>
     </header>
 
-    <main class="mx-auto text-center text-gray-100">
+    <main class="mx-auto text-center text-slate-800">
 
       <div class="px-4 bg-teal-700 rounded-3xl font-semibold select-none
                   py-12 md:py-16 
@@ -96,32 +96,40 @@
         <p class="py-5">Keep scrolling to discover my current experience and projects that I am working on.</p>
       </div>
 
-      <section name="experience" class=" text-gray-100 bg-cyan-800 w-full">
-        <div class="text-4xl font-semibold pt-16 pb-4">Experience</div>
-        <div class="flex flex-row flex-wrap px-4 py-12 mx-auto">
+      <section name="experience" class="bg-custColour-200 w-full">
+        <div class="text-3xl sm:text-4xl font-semibold pt-16 pb-4">Current Experience</div>
+        <div class="flex flex-row flex-wrap px-4 py-12 mx-auto 3xl:text-lg 5xl:text-xl">
 
             <!-- Education -->
-          <div class="3.5xl:my-auto timeline-section-container">
-            <section id="education" class="timeline-section border-cyan-400">
+          <div class="timeline-section-container">
+            <section id="education" class="timeline-section border-cyan-800 hover:shadow-cyan-800/75">
               <div class="timeline-header">
-                <div class="header-line before:bg-cyan-400">
+                <div class="header-line before:bg-cyan-800">
                   <h3 class="header-title">Education</h3>
                 </div>
               </div>
               <div class="timeline-content-section">
                 <div class="content-point-line">
-                  <div class="content-point before:bg-cyan-400">
+                  <div class="content-point before:bg-cyan-800">
                     <h3 class="content-title">University of Stirling</h3>
-                    <p class="content-duration">Summer 2020 - Summer 2022</p>
-                    <a href="https://www.stir.ac.uk/courses/ug/software-development-with-cyber-security/#panel_modules_001" target="_blank" class="mt-6 hover:underline">Completed a Bachelor of Science with Honours in Software Development with Cyber Security.</a>
-                    <p class="font-semibold">Dissertation Project - Using Machine Learning to predict Mobile Coverage</p>
-                    <p class="text-sm uppercase font-bold mt-6 mb-3">Grade Achieved - 1st Class</p>
+                    <p class="content-duration">2020 - 2022</p>
+                    <div class="mt-3">
+                      <p class="inline">Completed a Bachelor of Science with Honours in</p>
+                      <a href="https://www.stir.ac.uk/courses/ug/software-development-with-cyber-security/#panel_modules_001" target="_blank" class="hover:underline font-bold">Software Development with Cyber Security.</a>
+                    </div>
+                    <p class="">Dissertation Project - Using Machine Learning to predict Mobile Coverage.</p>
+                    <p class="text-base 3xl:text-lg uppercase font-bold mt-3 mb-3">Grade Achieved - 1st Class</p>
                   </div>
-                  <div class="content-point before:bg-cyan-400">
+
+                  <div class="timeline-header lg:hidden">
+                    <div class="header-line before:bg-cyan-800"></div>
+                  </div>
+
+                  <div class="content-point before:bg-cyan-800">
                     <h3 class="content-title">Forth Valley College</h3>
                     <p class="content-duration">2018 - 2020</p>
-                    <p class="mt-6 mb-3">Completed a Higher National Diploma (HND) in Software Development. This was completed as the first two years of a joint BSc course between Forth Valley College and the University of Stirling.</p>
-                    <p class="text-sm uppercase font-bold mt-3 mb-6">Grade Achieved - A</p>
+                    <p class="mt-3 mb-3">Completed a Higher National Diploma (HND) in Software Development. This was completed as the first two years of a joint BSc course between Forth Valley College and the University of Stirling.</p>
+                    <p class="text-base 3xl:text-lg uppercase font-bold mt-3 mb-6">Grade Achieved - A</p>
                   </div>
                 </div>
               </div>
@@ -129,23 +137,23 @@
           </div>
 
             <!--Work Experience -->
-          <div class="3.5xl:order-first  timeline-section-container 3.5xl:my-auto">
-            <section id="work" class="timeline-section border-lime-400 mt-16 3.5xl:mt-0">
+          <div class="timeline-section-container">
+            <section id="work" class="timeline-section border-indigo-700 hover:shadow-indigo-700/75 mt-16">
               <div class="timeline-header">
-                <div class="header-line before:bg-lime-400">
+                <div class="header-line before:bg-indigo-700">
                   <h3 class="header-title">Work</h3>
-                  <span class="text-sm font-bold tracking-wide uppercase text-gray-300">Incl Placement</span>
+                  <span class="text-sm 5xl:text-lg font-bold tracking-wide uppercase">Incl Placement</span>
                 </div>
               </div>
               <div class="timeline-content-section">
                 <div class="content-point-line">
-                  <div class="content-point before:bg-lime-400">
+                  <div class="content-point before:bg-indigo-700">
                     <h3 class="content-title">Sprinkle Tops</h3>
-                    <h4 class="text-base font-semibold tracking-wide text-gray-300 mb-1">Ice Cream Scooper</h4>
+                    <h4 class="text-base 3xl:text-lg 5xl:text-xl font-semibold tracking-wide mb-1">Customer Service Assistant</h4>
                     <p class="content-duration">Jul 2018 - Present</p>
                     <p class="my-3 font-semibold">Duties Include:</p>
-                    <div class="mx-auto text-left md:px-4 lg:pl-12 4xl:pl-4 5xl:pl-8">
-                      <ul class="list-disc">
+                    <div class="mx-auto text-left 5xl:text-center pl-4 lg:pl-8 3xl:pl-8 4xl:pl-12">
+                      <ul class="list-disc 5xl:list-none">
                         <li>Opening and closing with key holder responsibilities.</li>
                         <li>General cleaning and organising of shop shelves.</li>
                         <li>Managing stock levels for demand and updating online menus to reflect current availability.</li>
@@ -155,11 +163,16 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="content-point before:bg-lime-400">
+
+                  <div class="timeline-header lg:hidden">
+                    <div class="header-line before:bg-indigo-700"></div>
+                  </div>
+
+                  <div class="content-point before:bg-indigo-700">
                     <h3 class="content-title">Modus Scotland Ltd</h3>
-                    <h4 class="text-base font-semibold tracking-wide text-gray-300 mb-1">Year 3 Summer Placement</h4>
+                    <h4 class="text-base 3xl:text-lg 5xl:text-xl font-semibold tracking-wide mb-1">Year 3 Summer Placement</h4>
                     <p class="content-duration">Summer 2021</p>
-                    <p class="mt-3 mb-6">The task consisted of upgrading an in house solution to become a website to 
+                    <p class="mt-3 mb-6 3xl:pl-4">The task consisted of upgrading an in house solution to become a website to 
                       allow a user to keep track of a projects progress by logging the different jobs completed and 
                       the time/cost for each. Uncompleted jobs are displayed to the user along with details relating 
                       to different project metrics.</p>
@@ -170,20 +183,20 @@
           </div>
 
             <!-- Certifications -->
-          <div class="timeline-section-container 3.5xl:my-auto mb-8 4xl:mb-auto">
-            <section id="certifications" class="timeline-section border-red-400 mt-16 4xl:mt-0">
+          <div class="timeline-section-container mb-8">
+            <section id="certifications" class="timeline-section border-red-700 hover:shadow-red-700/75 mt-16">
               <div class="timeline-header">
-                <div class="header-line before:bg-red-400">
+                <div class="header-line before:bg-red-700">
                   <h3 class="header-title">Certifications</h3>
                 </div>
               </div>
               <div class="timeline-content-section">
                 <div class="content-point-line">
-                  <div class="content-point before:bg-red-400">
+                  <div class="content-point before:bg-red-700">
                     <h3 class="content-title">Oracle Java Programming</h3>
                     <p class="content-duration">June 2020</p>
                   </div>
-                  <div class="content-point before:bg-red-400">
+                  <div class="content-point before:bg-red-700">
                     <h3 class="content-title">Oracle Database Design and Programming with SQL</h3>
                     <p class="content-duration mb-6">June 2020</p>
                   </div>
@@ -195,60 +208,62 @@
         </div>
       </section>
 
-      <section id="projects" class="bg-neutral-200 text-slate-800">
+      <section id="projects" class="bg-custColour-200 pb-32 pt-12">
 
-        <h2 class="text-4xl font-semibold pt-16">Current Projects</h2>
+        <h2 class="text-3xl sm:text-4xl 5xl:text-5xl font-semibold">Featured Projects</h2>
 
-        <div class="grid grid-cols-12 xl:gap-x-8 gap-y-8 xl:gap-y-0 p-8 pt-16 pb-24">
+        <div class="grid grid-cols-12 xl:gap-x-8 gap-y-16 xl:gap-y-0 5xl:w-2/3 5xl:mx-auto p-8 pt-16 select-none 3xl:text-lg 5xl:text-xl">
 
-            <div class="card-container border-blue-500">
+            <div class="card-container border-cyan-800 text-cyan-800 hover:shadow-cyan-800">
               <div class="flex justify-center">
-                <svg class="h-10 w-10 text-blue-500" fill="none" stroke="currentColor"><use xlink:href="#hat"/></svg>
-                <h3 class="ml-4 my-auto text-xl font-bold">University of Stirling - Grade Calculator</h3>
+                <svg class="h-10 w-10" fill="none" stroke="currentColor"><use xlink:href="#hat"/></svg>
+                <h3 class="hidden sm:block ml-4 my-auto text-xl 3xl:text-2xl font-bold">University of Stirling - Grade Calculator</h3>
+                <h3 class="sm:hidden ml-4 my-auto text-xl font-bold">Grade Calculator</h3>
               </div>
-              <p class="my-4 text-base">
-                After graduating from University, my friend <a href="https://portfolio.ljskinner.com/" class="hover:underline font-bold">Luke Skinner</a> 
+              <p class="my-6 3xl:my-4 text-slate-800">
+                After graduating from University, my friend <a href="https://portfolio.ljskinner.com/" target="_blank" class="hover:underline font-bold">Luke Skinner</a> 
                 and I realised there wasn't an easy way to predict the final grade a student would achieve after completing their degree. 
                 This calculator offers students a simple approach to relax and improve predictions by combining their module results with the University of Stirling Marking Scheme.
               </p>
               <div class="w-full">
-                <a href="https://github.com/Project-Roundtable/Uni-Stirling-Grade-Calculator-Website" class="block py-2 rounded-full border-2 border-blue-500 hover:bg-blue-500 hover:text-white">Learn More</a>
+                <a href="https://github.com/Project-Roundtable/Uni-Stirling-Grade-Calculator-Website" target="_blank" class="block py-2 rounded-full border-2 border-cyan-800 hover:bg-cyan-800 hover:text-white font-semibold">Learn More</a>
               </div>
             </div>
-            <div class="card-container border-orange-400">
+            <div class="card-container border-red-700 text-red-700 hover:shadow-red-700/75">
               <div class="flex justify-center">
-                <svg class="h-8 w-8 text-orange-400" fill="currentColor"><use xlink:href="#bolt"></use></svg>
-                <h3 class="ml-2 my-auto text-xl font-bold">Energy Calculator</h3>
+                <svg class="h-8 w-8" fill="currentColor"><use xlink:href="#bolt"></use></svg>
+                <h3 class="ml-2 my-auto text-xl 3xl:text-2xl font-bold">Energy Calculator</h3>
               </div>
-              <p class="my-6 text-base">
+              <p class="my-6 text-slate-800">
                 Are you feeling the pinch of rising energy costs? This calculator is here to help! with this tool, you can log weekly meter readings to get
                  an idea of how your energy bill is changing before your monthly statement arrives - even if you don't have a smart meter installed! 
               </p>
-              <div class="py-2">
-                <p class="rounded-full py-2 border-2 border-orange-400 hover:bg-orange-400 hover:text-black">Coming 2023</p>
+              <div class="xl:pt-6 3xl:pt-3">
+                <p class="rounded-full py-2 mt-2 border-2 border-red-700 hover:bg-red-700 font-semibold hover:text-white">Coming 2023</p>
               </div>
             </div>
-            <div class="card-container border-indigo-500">
+            <div class="card-container border-indigo-700 text-indigo-700 hover:shadow-indigo-700/75
+                        xl:mt-16 xl:col-span-12 xl:mx-auto xl:max-w-screen-sm 2xl:max-w-screen-md 3xl:col-span-4 3xl:mt-0">
               <div class="flex justify-center">
-                <svg class="h-8 w-8 text-indigo-500" fill="currentColor"><use xlink:href="#people"></use></svg>
-                <h3 class="ml-4 my-auto text-xl font-bold">Admin Dashboard</h3>
+                <svg class="h-8 w-8" fill="currentColor"><use xlink:href="#people"></use></svg>
+                <h3 class="ml-4 my-auto text-xl 3xl:text-2xl font-bold">Vessel Dashboard</h3>
               </div>
-              <p class="my-6 text-base tracking-tight">
+              <p class="my-6 tracking-tight text-slate-800">
                 I noticed that payroll and worker rota distribution could use some improvement at my workplace. The goal of this project is to have everything in one place, this will make it possible to create and store rotas, calculate employee hours and pay 
                 whilst giving access to both managers and staff.
               </p>
-              <div class="py-2">
-                <p class="rounded-full py-2 border-2 border-indigo-500 hover:bg-indigo-500 hover:text-white">Coming 2023</p>
+              <div class="3xl:pt-3">
+                <p class="rounded-full py-2 mt-2 border-2 border-indigo-700 hover:bg-indigo-700 font-semibold hover:text-white">Coming 2023</p>
               </div>
             </div>
 
         </div>
       </section>
 
-      <section>
-        <div class="w-full text-4xl font-semibold pt-8 pb-6 tracking-tight text-black">Contact or locate me here</div>
+      <section class="bg-cyan-800 py-24">
+        <div class="w-full text-4xl font-semibold pb-6 tracking-tight text-gray-100">Contact or locate me here</div>
           <div class="flex flex-row flex-wrap justify-evenly 3xl:justify-center 3xl:space-x-24 4xl:space-x-36 lg:space-x-4 space-y-9 lg:space-y-0 px-9 py-5 text-black font-semibold text-3xl">
-            <a class="social-hover-btn bg-white hover:text-linkedinBlue" href="https://www.linkedin.com/in/andrew-mcg99" aria-label="LinkedIn">
+            <a class="social-hover-btn bg-white hover:text-linkedinBlue" href="https://www.linkedin.com/in/andrew-mcg99" target="_blank" aria-label="LinkedIn">
               <img class="mx-auto mb-7" src="resources/images/In-Blue-48-Γäó.png" alt="Linkedin Logo">
               <p class="mb-1">LinkedIn</p>
             </a> 
@@ -256,14 +271,14 @@
                 <svg class="w-12 h-12 fill-current mx-auto mb-7"><use xlink:href="#letter-plus"/></svg>
                 <p>Contact</p>
             </a>
-            <a class="social-hover-btn bg-gray-200" href="https://www.github.com/AndrewMcGuckin">
+            <a class="social-hover-btn bg-gray-200" href="https://www.github.com/AndrewMcGuckin" target="_blank">
               <img class="mx-auto mb-7 w-12" src="resources/images/GitHub-Mark-64px.png" alt="GitHub Logo">
               <p>GitHub</p>
             </a>
           </div>
       </section>
 
-      <footer class="py-9 mt-16 bg-custColour-200 text-black">
+      <footer class="py-9 bg-custColour-200 text-black">
         <div class="right-0 font-semibold text-center">&copy; 2023 Andrew McGuckin</div>
       </footer>
 
