@@ -1163,26 +1163,6 @@ video {
   flex-basis: 100%;
 }
 
-.cursor-not-allowed {
-  cursor: not-allowed;
-}
-
-.cursor-wait {
-  cursor: wait;
-}
-
-.cursor-progress {
-  cursor: progress;
-}
-
-.cursor-help {
-  cursor: help;
-}
-
-.cursor-grab {
-  cursor: grab;
-}
-
 .select-none {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -1337,14 +1317,14 @@ video {
   background-color: rgb(14 116 144 / var(--tw-bg-opacity));
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .bg-cyan-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(21 94 117 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-teal-600 {
@@ -1566,14 +1546,14 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-gray-100 {
-  --tw-text-opacity: 1;
-  color: rgb(243 244 246 / var(--tw-text-opacity));
-}
-
 .text-slate-800 {
   --tw-text-opacity: 1;
   color: rgb(30 41 59 / var(--tw-text-opacity));
+}
+
+.text-gray-100 {
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 
 .text-cyan-800 {
@@ -1589,11 +1569,6 @@ video {
 .text-indigo-700 {
   --tw-text-opacity: 1;
   color: rgb(67 56 202 / var(--tw-text-opacity));
-}
-
-.text-slate-100 {
-  --tw-text-opacity: 1;
-  color: rgb(241 245 249 / var(--tw-text-opacity));
 }
 
 .transition {
@@ -1984,18 +1959,6 @@ video {
     padding-left: 1rem;
   }
 
-  .\33xl\:pt-6 {
-    padding-top: 1.5rem;
-  }
-
-  .\33xl\:pt-4 {
-    padding-top: 1rem;
-  }
-
-  .\33xl\:pt-3\.5 {
-    padding-top: 0.875rem;
-  }
-
   .\33xl\:pt-3 {
     padding-top: 0.75rem;
   }
@@ -2087,30 +2050,6 @@ video {
     padding-bottom: 24rem;
   }
 
-  .\35xl\:pt-7 {
-    padding-top: 1.75rem;
-  }
-
-  .\35xl\:pt-0\.5 {
-    padding-top: 0.125rem;
-  }
-
-  .\35xl\:pt-0 {
-    padding-top: 0px;
-  }
-
-  .\35xl\:pt-1 {
-    padding-top: 0.25rem;
-  }
-
-  .\35xl\:pt-5 {
-    padding-top: 1.25rem;
-  }
-
-  .\35xl\:pt-3 {
-    padding-top: 0.75rem;
-  }
-
   .\35xl\:text-center {
     text-align: center;
   }
@@ -2123,11 +2062,6 @@ video {
   .\35xl\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .\35xl\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .\35xl\:text-5xl {
